@@ -120,7 +120,6 @@ function postProcess(options: CliOptions) {
         console.log(chalk.blue("           npm run build"))
         console.log(chalk.blue("                   Makes build file in dist or electron build, depending on os"));
         console.log(chalk.blueBright("Happy Coding!"));
-        
         if (result.code !== 0) {
             return false;
         }
