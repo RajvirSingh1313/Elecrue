@@ -5,7 +5,7 @@ import * as path from 'path';
 import * as inquirer from 'inquirer';
 import chalk from 'chalk';
 import * as template from './utils/template';
-import * as shell from 'shelljs';
+const exec = require('child_process').exec;
 
 const CHOICES = fs.readdirSync(path.join(__dirname, 'templates'));
 const QUESTIONS = [
@@ -101,17 +101,18 @@ function createDirectoryContents(templatePath: string, projectName: string) {
 function postProcess(options: CliOptions) {
     const isNode = fs.existsSync(path.join(options.templatePath, 'package.json'));
     if (isNode) {
-        shell.cd(options.tartgetPath);
+        exec(`cd ${options.tartgetPath}`);
         console.log("Downloading Node Modules");
-        const result = shell.exec('npm install');
+        const result = exec('npm install');
+
         console.log("");
         console.log("");
-        console.log("NPM Useful Commands :- ")
-        console.log("           npm run start")
-        console.log("                   Runs electron with react or vue");
-        console.log("           npm run build")
-        console.log("                   Makes build file in dist or electron build, depending on os");
-        console.log("%cHappy Coding","color:blue");
+        console.log(chalk.blueBright("NPM Useful Commands :- "));
+        console.log(chalk.blue("           npm run start"))
+        console.log(chalk.blue("                   Runs electron with react or vue"));
+        console.log(chalk.blue("           npm run build"))
+        console.log(chalk.blue("                   Makes build file in dist or electron build, depending on os"));
+        console.log(chalk.blueBright("Happy Coding!"));
         if (result.code !== 0) {
             return false;
         }
