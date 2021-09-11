@@ -1,6 +1,6 @@
 {
   "name": "elecrue",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Elecrue generates a stater code for electron with react or vue in both ts or js",
   "main": "index.ts",
   "scripts": {
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/ejs": "^3.1.0",
     "@types/inquirer": "^8.1.1",
+    "@types/shelljs": "^0.8.9",
     "nodemon": "^2.0.12",
     "shx": "^0.3.3",
     "ts-node": "^10.2.1",
@@ -23,6 +24,6 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "inquirer": "^8.1.2",
-    "@types/shelljs": "^0.8.9"
+    "shelljs": "^0.8.4"
   }
 }
