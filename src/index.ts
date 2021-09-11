@@ -103,7 +103,14 @@ function postProcess(options: CliOptions) {
     if (isNode) {
         exec(`cd ${options.tartgetPath}`);
         console.log("Downloading Node Modules");
-        const result = exec('npm install');
+
+        exec('npm install', (err:string, stdout:string, stderr:string) => {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            console.log(stdout);
+        });
 
         console.log("");
         console.log("");
@@ -113,6 +120,7 @@ function postProcess(options: CliOptions) {
         console.log(chalk.blue("           npm run build"))
         console.log(chalk.blue("                   Makes build file in dist or electron build, depending on os"));
         console.log(chalk.blueBright("Happy Coding!"));
+        
         if (result.code !== 0) {
             return false;
         }
