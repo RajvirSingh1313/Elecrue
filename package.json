@@ -15,7 +15,6 @@
   "devDependencies": {
     "@types/ejs": "^3.1.0",
     "@types/inquirer": "^8.1.1",
-    "@types/shelljs": "^0.8.9",
     "nodemon": "^2.0.12",
     "shx": "^0.3.3",
     "ts-node": "^10.2.1",
@@ -23,6 +22,7 @@
   },
   "dependencies": {
     "ejs": "^3.1.6",
-    "inquirer": "^8.1.2"
+    "inquirer": "^8.1.2",
+    "@types/shelljs": "^0.8.9"
   }
 }
