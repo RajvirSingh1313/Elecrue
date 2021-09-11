@@ -1,6 +1,6 @@
 {
   "name": "elecrue",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Elecrue generates a stater code for electron with react or vue in both ts or js",
   "main": "index.ts",
   "scripts": {
