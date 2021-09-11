@@ -7,7 +7,7 @@
     "start": "ts-node src/index.ts",
     "build": "tsc --jsx react-jsx && shx rm -rf dist/templates && cp src/templates dist"
   },
-  "author": "",
+  "author": "RajvirSingh1313",
   "license": "ISC",
   "bin": {
     "elecrue": "./dist/index.js"
