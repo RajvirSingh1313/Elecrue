@@ -10,6 +10,16 @@
 # What does it do?
 Elecrue is a boilerplate generator, it generates the boilercode for electron with react or vue with tailwindcss.
 
+# Current Templates
+```
+1. react-electron-js
+2. react-electron-ts
+4. react-electron-tailwind-js
+5. react-electron-tailwind-ts
+6. vue-electron-js
+7. vue-electron-tailwind-js
+```
+
 # Why Elecrue don't use IPC?
 From my experience connecting electron to react or vue is a hard thing, So I found a much easier and reliable solution to this problem, By creating an express server in electron file we can make endpoints for our react or vue application to hit, when app will request those endpoints it will trigger an event by doing that we can do all the work that we can't do in react or vue. Think of it as a function in another file but without calling you are making get request to the server to trigger that function.
 
