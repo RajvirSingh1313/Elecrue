@@ -1,7 +1,15 @@
 {
   "name": "elecrue",
-  "version": "1.0.8",
-  "keywords": ["electron with react starter code","electron with vue starter code","code generator", "starter code", "react", "electron","vue"],
+  "version": "1.1.9",
+  "keywords": [
+    "electron with react starter code",
+    "electron with vue starter code",
+    "code generator",
+    "starter code",
+    "react",
+    "electron",
+    "vue"
+  ],
   "description": "Elecrue generates a stater code for electron with react or vue in both ts or js",
   "main": "index.ts",
   "scripts": {

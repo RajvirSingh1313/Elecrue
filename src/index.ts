@@ -101,25 +101,29 @@ function createDirectoryContents(templatePath: string, projectName: string) {
 function postProcess(options: CliOptions) {
     const isNode = fs.existsSync(path.join(options.templatePath, 'package.json'));
     if (isNode) {
-        exec(`cd ${options.tartgetPath}`);
         console.log("Downloading Node Modules");
 
-        exec('npm install', (err:string, stdout:string, stderr:string) => {
+        exec(`cd "${options.tartgetPath}" && npm install`, (err: string, stdout: string, stderr: string) => {
             if (err) {
                 console.error(err);
                 return;
             }
             console.log(stdout);
-        });
 
-        console.log("");
-        console.log("");
-        console.log(chalk.blueBright("NPM Useful Commands :- "));
-        console.log(chalk.blue("           npm run start"))
-        console.log(chalk.blue("                   Runs electron with react or vue"));
-        console.log(chalk.blue("           npm run build"))
-        console.log(chalk.blue("                   Makes build file in dist or electron build, depending on os"));
-        console.log(chalk.blueBright("Happy Coding!"));
+            console.log("");
+            console.log("");
+            console.log(chalk.blueBright("NPM Useful Commands :- "));
+            console.log(chalk.blue("           npm run start"))
+            console.log(chalk.blue("                   Runs electron with react or vue"));
+            console.log(chalk.blue("           npm run build"))
+            console.log(chalk.blue("                   Makes build file in dist or electron build, depending on os"));
+            console.log("")
+            console.log("")
+            console.log(chalk.blueBright(`cd ${options.templateName}`));
+            console.log(chalk.blueBright("npm run start"));
+            console.log("");
+            console.log(chalk.blueBright("Happy Coding!"));
+        });
     }
 
     return true;
