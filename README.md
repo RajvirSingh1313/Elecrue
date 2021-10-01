@@ -1,5 +1,4 @@
-![Elecrue Banner](https://user-images.githubusercontent.com/44239968/133919975-a0fe079f-4057-4cb6-bd48-80668fa59bfa.png)
-
+![Elecrue Banner](https://user-images.githubusercontent.com/63385587/135675383-1c74f040-d8a9-49a4-a035-a0fcc4edac0c.png)
 
 [![npm version](https://badge.fury.io/js/elecrue.svg)](https://badge.fury.io/js/elecrue)
 <img src="https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=9FEAF9"/>
