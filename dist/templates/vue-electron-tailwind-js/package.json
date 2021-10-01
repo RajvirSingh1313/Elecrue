@@ -1,0 +1,64 @@
+{
+  "name": "vue-electron-js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "<your project description>",
+  "author": "<author of app>",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build && electron-builder",
+    "lint": "vue-cli-service lint",
+    "start": "vue-cli-service build && electron ."
+  },
+  "main": "electron.js",
+  "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "electron-is-dev": "^2.0.0",
+    "express": "^4.17.1",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "electron": "^14.0.0",
+    "electron-builder": "^22.11.7",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "vue-cli-plugin-tailwind": "~2.0.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "build": {
+    "asar": true,
+    "appId": "<com.your_app>",
+    "directories": {
+      "output": "electron build"
+    }
+  },
+  "homepage": "./"
+}
