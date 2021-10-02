@@ -30,3 +30,7 @@ From my experience connecting electron to react or vue is a hard thing, So I fou
 ```
 ## How to use it?
 ![Elecrue Terminal](https://user-images.githubusercontent.com/63385587/132942925-bbd9a3db-63c9-4cd3-be4b-45ab6a9749ef.png)
+
+
+# License
+Distributed under the MIT License. See [LICENSE](https://github.com/RajvirSingh1313/Elecrue/blob/master/LICENSE) for more information. 
