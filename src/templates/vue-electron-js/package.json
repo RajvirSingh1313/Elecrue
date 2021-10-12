@@ -8,7 +8,7 @@
       "output": "electron build"
     }
   },
-  "main": "main.js",
+  "main": "electron.js",
   "homepage": "./",
   "name": "vue-electron-js",
   "version": "0.1.0",
