@@ -1,4 +1,4 @@
-# vue-electron-ts
+# vue-electron-js
 
 ## Project setup
 ```
