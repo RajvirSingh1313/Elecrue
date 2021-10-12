@@ -5,6 +5,7 @@
 <img src="https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=9FEAF9"/>
 <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 </div>
   
@@ -17,8 +18,9 @@ Elecrue is a boilerplate generator for electron. It generates boilcode for react
 2. react-electron-ts
 4. react-electron-tailwind-js
 5. react-electron-tailwind-ts
-6. vue-electron-js
-7. vue-electron-tailwind-js
+6. react-electron-bootstrap-js
+7. vue-electron-js
+8. vue-electron-tailwind-js
 ```
 
 # Why does Elecrue don't use IPC?
