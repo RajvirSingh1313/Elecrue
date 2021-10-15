@@ -1,6 +1,6 @@
 {
   "name": "elecrue",
-  "version": "1.1.10",
+  "version": "2.0.0",
   "keywords": [
     "electron with react starter code",
     "electron with vue starter code",
@@ -11,30 +11,23 @@
     "vue"
   ],
   "description": "Elecrue generates a stater code for electron with react or vue in both ts or js",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc --jsx react-jsx && shx rm -rf dist/templates && cp src/templates dist"
+    "start": "node src/index.js"
   },
   "author": "Rajvir @RajvirSingh1313",
   "license": "ISC",
   "bin": {
-    "elecrue": "./dist/index.js"
+    "elecrue": "./src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rajvirsingh1313/elecrue.git"
   },
-  "devDependencies": {
-    "@types/ejs": "^3.1.0",
-    "@types/inquirer": "^8.1.1",
-    "@types/shelljs": "^0.8.9",
-    "shx": "^0.3.3",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.2"
-  },
   "dependencies": {
-    "ejs": "^3.1.6",
-    "inquirer": "^8.1.2"
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "ncp": "^2.0.0"
   }
 }
