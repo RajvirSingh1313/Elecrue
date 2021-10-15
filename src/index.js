@@ -29,7 +29,7 @@ const questions = [
     {
         type: 'list',
         name: 'Language',
-        message: 'In which language do you want to use?',
+        message: 'Which language do you want to use?',
         choices: [
             "JavaScript",
             "TypeScript"
@@ -48,7 +48,7 @@ const questions = [
     {
         type: 'list',
         name: 'Styling',
-        message: 'In which styling framework do you want to use?',
+        message: 'Which styling framework do you want to use?',
         choices: [
             "Tailwind",
             "Bootstrap",
@@ -114,7 +114,7 @@ const PostProcessing = (templatePath, targetPath, ProjectName) => {
     if (isNode) {
         console.log(chalk.greenBright.bold("Downloading Node Modules"));
 
-        exec(`cd "${targetPath}"`, (err, stdout) => {
+        exec(`cd "${targetPath}" && npm install`, (err, stdout) => {
             if (err) {
                 console.error(err);
                 return;
