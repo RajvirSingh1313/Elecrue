@@ -36,7 +36,7 @@ From my experience connecting electron to react or vue is a hard thing, So I fou
   npm i -g elecrue
 ```
 ## How to use it?
-![Elecrue Terminal](https://user-images.githubusercontent.com/63385587/132942925-bbd9a3db-63c9-4cd3-be4b-45ab6a9749ef.png)
+![Elecrue Terminal](https://user-images.githubusercontent.com/63385587/138876771-35d37d08-d893-4394-9043-02d7cc70d8f6.png)
 
 
 # License
