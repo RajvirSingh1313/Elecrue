@@ -1,13 +1,17 @@
-![Elecrue Banner](https://user-images.githubusercontent.com/63385587/135675383-1c74f040-d8a9-49a4-a035-a0fcc4edac0c.png)
+
+![Elecrue Banner](https://user-images.githubusercontent.com/63385587/139525850-98ec4309-7f19-4bc3-803f-4e2d978c0d15.png)
 
 <div align="center">
 <a href="https://badge.fury.io/js/elecrue" target="_blank" ><img src="https://badge.fury.io/js/elecrue.svg" alt="npm version"/></a>
 <img src="https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=9FEAF9"/>
 <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 </div>
+
+### Note: This project is fully alive, I am fully working on it, if you liked this project please share, contribute, and best using it and reporting issues.
+
 
 # What does it do?
 Elecrue is a boilerplate generator for electron. It generates boilercode for react or vue, with bootstrap or tailwindcss.
