@@ -10,7 +10,7 @@
 </div>
 
 # What does it do?
-Elecrue is a boilerplate generator for electron. It generates boilcode for react or vue, optionally with tailwindcss.
+Elecrue is a boilerplate generator for electron. It generates boilercode for react or vue, with bootstrap or tailwindcss.
 
 # Current Templates
 ```
