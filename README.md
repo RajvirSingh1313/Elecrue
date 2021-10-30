@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 </div>
 
-### Note: This project is fully alive, I am fully working on it, if you liked this project please share, contribute, and best using it and reporting issues.
+### Note: This project is fully alive, I am working on it on my weekends, if you liked this project please share, contribute, and best of all use it and reporting issues.
 
 
 # What does it do?
