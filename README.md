@@ -43,5 +43,18 @@ From my experience connecting electron to react or vue is a hard thing, So I fou
 ![Elecrue Terminal](https://user-images.githubusercontent.com/63385587/138876771-35d37d08-d893-4394-9043-02d7cc70d8f6.png)
 
 
+# Want to contribute?
+## Cloning this repo and build Elecrue
+```
+git clone https://github.com/RajvirSingh1313/Elecrue
+cd Elecrue
+npm install
+npm start
+```
+
+If you prefer using [Yarn](https://yarnpkg.com/), then replace `npm` with `yarn` above.
+
+
+
 # License
 Distributed under the MIT License. See [LICENSE](https://github.com/RajvirSingh1313/Elecrue/blob/master/LICENSE) for more information.
