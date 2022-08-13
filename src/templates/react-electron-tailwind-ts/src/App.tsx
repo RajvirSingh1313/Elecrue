@@ -7,9 +7,7 @@ function App() {
   const [appName, setAppName] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5001/app-details")
-      .then((response) => response.text())
-      .then((data) => setAppName(data));
+    setAppName(window.electronAPI.getAppDetails());
   }, []);
 
   return (
@@ -20,7 +18,7 @@ function App() {
           Edit <code>src</code> to work with react.
         </p>
         <p>
-          Edit <code>public/electron</code> to work electron and express.
+          Edit <code>public/electron</code> to work electron.
         </p>
         <p>
           Backend is up and running at http://localhost:5001 and it shows{" "}

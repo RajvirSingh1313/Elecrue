@@ -1,47 +1,29 @@
-const url = require('url');
 const path = require('path');
 
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const isDev = require('electron-is-dev');
-
-const express = require('express')
-const expressApp = express();
-const port = 5001;
-const cors = require('cors');
-
-expressApp.use(cors());
-expressApp.options('*', cors());
-expressApp.use(express.json());
-expressApp.use(express.urlencoded({ extended: true }));
-
-expressApp.get("/app-details", (req, res) => {
-    res.send(app.name);
-});
-
-expressApp.get("/close-app", (req, res) => {
-    app.quit();
-});
-
-expressApp.listen(port);
 
 function createWindow() {
     // Create the browser window.
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
-        webPreferences: {
-            nodeIntegration: true,
-        },
+      width: 800,
+      height: 600,
+      webPreferences: {
+        nodeIntegration: true,
+        preload: path.join(__dirname, "preload.js"),
+      },
+    });
+
+    ipcMain.on("getAppDetails", ()=>{
+        return app.name;
     });
 
     // and load the index.html of the app.
     // win.loadFile("index.html");
     win.loadURL(
-        url.format({
-        pathname: path.join(__dirname, `./dist/index.html`),
-        protocol: "file:",
-        slashes: true
-    })
+        isDev
+            ? 'http://localhost:3000'
+            : `file://${path.join(__dirname, '../build/index.html')}`
     );
     // Open the DevTools.
     if (isDev) {
