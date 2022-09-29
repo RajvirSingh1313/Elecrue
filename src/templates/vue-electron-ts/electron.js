@@ -14,7 +14,7 @@ function createWindow() {
       },
     });
 
-    ipcMain.on("getAppDetails", ()=>{
+    ipcMain.handle("getAppDetails", ()=>{
         return app.name;
     });
 

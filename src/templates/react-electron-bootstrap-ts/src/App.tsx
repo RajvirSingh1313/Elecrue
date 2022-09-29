@@ -5,8 +5,9 @@ import { useEffect, useState } from "react";
 function App() {
   const [appName, setAppName] = useState("");
 
-  useEffect(() => {
-    setAppName(window.electronAPI.getAppDetails());
+  useEffect(async () => {
+    const response = await window.electronAPI.getAppDetails();
+    setAppName(response);
   }, []);
 
   return (
